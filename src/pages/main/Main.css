@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.wrapper .content {
+  padding: 0 8%;
+  flex: 1 0 auto;
+  z-index: 0;
+}
+
+/*# sourceMappingURL=Main.css.map */
