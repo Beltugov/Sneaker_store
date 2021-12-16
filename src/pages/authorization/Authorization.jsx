@@ -27,8 +27,8 @@ const Authorization = () => {
                     <label className="checkbox-label" htmlFor="checkbox">
                         <input className="form-checkbox" type="checkbox" id="checkbox"/>
                         <div className="checkbox-mark"></div>
-                        Я согласен с <a className="checkbox-referral" href="#">Правилами пользования
-                        приложением</a></label>
+                        Я согласен с Правилами пользования
+                        приложением</label>
                 </div>
                 <button className="login__form-button form-button" type="submit" id="button">Войти</button>
             </form>
