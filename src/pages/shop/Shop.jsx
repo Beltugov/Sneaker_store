@@ -1,10 +1,17 @@
 import React from 'react';
-import notWork from '../../assets/img/not_work.jpg'
+import Card from "../../components/card/Card";
+import {sneakers} from "../../database/products";
+import "./Shop.scss"
+
 
 const Shop = () => {
     return (
-        <div>
-            <img src={notWork} alt=""/>
+        <div className="container-shop">
+            {sneakers.map((item) => {
+                return (
+                        <Card item = {item}/>
+                )
+            })}
         </div>
     );
 };

@@ -1,5 +1,26 @@
 .footer {
   flex: 0 0 auto;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 16px 8%;
+}
+.footer__contacts-list__item {
+  margin: 4px 0;
+}
+.footer__social-list {
+  display: flex;
+  margin: 25% 0;
+}
+.footer__social-list__item {
+  margin: 0 4px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 4px;
+}
+.footer__social-list__item a img {
+  margin: 4px 2px 0;
 }
 
 /*# sourceMappingURL=Footer.css.map */

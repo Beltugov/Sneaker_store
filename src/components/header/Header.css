@@ -19,32 +19,45 @@
 }
 .header__menu-list__item {
   padding: 16px 20px;
+  font-size: 1.1rem;
 }
 .header__menu-list__item a {
   font-family: "Roboto", monospace;
-  font-size: 1.2em;
-  color: black;
 }
-.header__buttons-list {
+.header__user {
   display: flex;
 }
-.header__buttons-list__item {
-  padding: 0 12px;
+.header__user-button {
+  margin: 0 12px;
 }
-.header__buttons-list__item:nth-of-type(2) {
+.header__user .login-button {
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: orange;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+}
+.header__user-name {
+  margin: 0 12px;
+  padding: 8px 0;
+  font-size: 1.1rem;
+}
+.header__user-basket {
   position: relative;
+  margin: 0 12px;
 }
-.header__buttons-list__item:nth-of-type(2) .quantity-badge {
+.header__user-basket .basket-count {
   position: absolute;
   color: white;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   text-align: center;
   width: 12px;
   height: 12px;
   padding: 4px;
   top: -4px;
   left: 60%;
-  background-color: red;
+  background-color: orange;
   border-radius: 50%;
   line-height: 12px;
 }

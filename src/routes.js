@@ -1,39 +1,38 @@
-import Admin from "./pages/admin/Admin";
 import Basket from './pages/basket/Basket'
 import Authorization from './pages/authorization/Authorization'
 import Main from './pages/main/Main'
 import Product from './pages/product/Product'
 import Shop from './pages/shop/Shop'
-import Favorites from "./pages/favorites/Favorites";
+
 import {
-    ADMIN_ROUTE,
     BASKET_ROUTE,
     LOGIN_ROUTE,
     MAIN_ROUTE,
     PRODUCT_ROUTE,
     REGISTRATION_ROUTE,
-    SHOP_ROUTE,
-    FAVORITE_ROUTE,
+    SNEAKERS_ROUTE,
+    ACCESSORIES_ROUTE,
+    CLOTHES_ROUTE,
 } from "./utils/constants";
 
 export const  authRoutes = [
     {
-        path: ADMIN_ROUTE,
-        Component: Admin
-    },
-    {
         path: BASKET_ROUTE,
         Component: Basket
-    },
-    {
-        path: FAVORITE_ROUTE,
-        Component: Favorites
     },
 ]
 
 export const  publicRoutes = [
     {
-        path: SHOP_ROUTE,
+        path: SNEAKERS_ROUTE,
+        Component: Shop
+    },
+    {
+        path: ACCESSORIES_ROUTE,
+        Component: Shop
+    },
+    {
+        path: CLOTHES_ROUTE,
         Component: Shop
     },
     {
