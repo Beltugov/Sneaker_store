@@ -1,12 +1,5 @@
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-.wrapper .content {
-  padding: 0 8%;
-  flex: 1 0 auto;
-  z-index: 0;
+.main-page {
+  text-align: center;
 }
 
 /*# sourceMappingURL=Main.css.map */

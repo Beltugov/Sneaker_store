@@ -1,0 +1,35 @@
+.card__block {
+  display: flex;
+  flex-direction: column;
+  margin: 18px 24px;
+}
+.card__block-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__block-image {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #f1eff2;
+  margin-bottom: 8px;
+  box-shadow: 0px 0px 15px 2px rgba(215, 215, 215, 0.6);
+}
+.card__block-title {
+  margin-bottom: 12px;
+}
+.card__block-price {
+  margin-bottom: 12px;
+}
+.card__block-button {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background-color: orange;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Card.css.map */
