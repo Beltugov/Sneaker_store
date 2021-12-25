@@ -14,12 +14,13 @@ function App() {
             isLogIn: authReducer.isLogIn
         }
     })
+
     return (
         <BrowserRouter>
             <div className="wrapper">
-                <Header item={isLogIn ? [isLogIn, user.name] : ""}/>
+                <Header isLogIn={isLogIn} user={isLogIn ? user.name : ""}/>
                 <main className="content">
-                    <AppRouter isLogin={isLogIn}/>
+                    <AppRouter isLogIn={isLogIn}/>
                 </main>
                 <Footer/>
             </div>

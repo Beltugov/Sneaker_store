@@ -44,7 +44,15 @@ export const  publicRoutes = [
         Component: Authorization
     },
     {
-        path: PRODUCT_ROUTE + '/:id',
+        path: SNEAKERS_ROUTE + PRODUCT_ROUTE + '/:id',
+        Component: Product
+    },
+    {
+        path: ACCESSORIES_ROUTE + PRODUCT_ROUTE + '/:id',
+        Component: Product
+    },
+    {
+        path: CLOTHES_ROUTE + PRODUCT_ROUTE + '/:id',
         Component: Product
     },
     {

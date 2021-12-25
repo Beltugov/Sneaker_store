@@ -5,23 +5,24 @@ import {LOGIN_ROUTE, BASKET_ROUTE, MAIN_ROUTE, SNEAKERS_ROUTE, CLOTHES_ROUTE, AC
 import logoImg from '../../assets/img/logo-2.jpg';
 import basketIcon from '../../assets/img/basket-icon.png'
 import {logOut} from "../../redux/action/actionLogin";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
-const Header = ({item}) => {
+const Header = (item) => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
-    const isLogIn = item[0]
-    const name = item[1]
+    const {count} = useSelector(({basketReducer}) => {
+        return {
+            count: basketReducer.totalCount
+        }
+    })
 
     function loginLogout() {
-        if (isLogIn) {
+        if (item.isLogIn) {
             dispatch(logOut())
         } else {
             navigate(LOGIN_ROUTE)
         }
     }
-
-
     return (
         <header className="header">
             <div className="header__navbar">
@@ -38,15 +39,15 @@ const Header = ({item}) => {
                     </ul>
                 </nav>
                 <div className="header__user">
-                    {isLogIn ?
+                    {item.isLogIn ?
                         <div className="header__user-basket"><NavLink to={BASKET_ROUTE}>
                             <img src={basketIcon}
                                  alt="basket"
                                  width={28}/>
-                            <span className="basket-count">0</span></NavLink></div> : ""}
-                    {isLogIn ? <div className="header__user-name">{name}</div> : ""}
+                            <span className="basket-count">{count}</span></NavLink></div> : ""}
+                    {item.isLogIn ? <div className="header__user-name">{item.user}</div> : ""}
                     <button className="header__user-button login-button"
-                            onClick={loginLogout}>{isLogIn ? "Выйти" : "Войти"}</button>
+                            onClick={loginLogout}>{item.isLogIn ? "Выйти" : "Войти"}</button>
                 </div>
             </div>
         </header>

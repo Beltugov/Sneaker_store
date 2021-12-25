@@ -1,6 +1,7 @@
 export const sneakers = [
     {
         id: 0,
+        type:"кроссовки",
         imageUrl: "https://sneakerhead.ru/upload/resize_cache/iblock/3a0/582_874_1/3a09ee52fd5fe9f34af5fa4276ae2d69.jpg",
         brand: "Native",
         name: "Fitzsimmons Treklite",
@@ -8,10 +9,12 @@ export const sneakers = [
         sizes: [41, 42, 43],
         price: 9490,
         rating: 4,
-        gender: "Мужские"
+        gender: "Мужские",
+        description:"Когда-нибудь здесь что-то появиться...",
     },
     {
         id: 1,
+        type:"кроссовки",
         imageUrl: "https://sneakerhead.ru/upload/resize_cache/iblock/122/582_874_1/122014e9e72178752a8693df9dc988fa.jpg",
         brand: "Nike",
         name: "Air Force 1 '07 PRMe",
@@ -19,10 +22,12 @@ export const sneakers = [
         sizes: [48.5],
         price: 10790,
         rating: 3,
-        gender: "Мужские"
+        gender: "Мужские",
+        description:"Хм... Может купить?",
     },
     {
         id: 2,
+        type:"кроссовки",
         imageUrl: "https://sneakerhead.ru/upload/iblock/4fd/4fd47eeb69247be970852e8d076bcf28.jpg",
         brand: "Jordan",
         name: "1 Low SE (GS)",
@@ -30,10 +35,12 @@ export const sneakers = [
         sizes: [34.5],
         price: 8190,
         rating: 5,
-        gender: "Женские"
+        gender: "Женские",
+        description:"Когда-нибудь здесь что-то появиться...",
     },
     {
         id: 3,
+        type:"кроссовки",
         imageUrl: "https://sneakerhead.ru/upload/iblock/17f/17f0e4e2c285ce59f193b1af698600e8.jpg",
         brand: "Nike",
         name: "WMNS Air Force 1 Sculpt",
@@ -41,10 +48,12 @@ export const sneakers = [
         sizes: [35.5, 36.5, 37, 39],
         price: 13800,
         rating: 8,
-        gender: "Женские"
+        gender: "Женские",
+        description:"Когда-нибудь здесь что-то появиться...",
     },
     {
         id: 4,
+        type:"кроссовки",
         imageUrl: "https://sneakerhead.ru/upload/resize_cache/iblock/2b4/582_874_1/2b4e4e166a16efd70f295c213bbd181d.jpg",
         brand: "Vans",
         name: "Sk8-Hi MTE-2",
@@ -52,24 +61,39 @@ export const sneakers = [
         sizes: [40, 41, 42, 43, 44],
         price: 6700,
         rating: 5,
-        gender: "Мужские"
+        gender: "Мужские",
+        description:"Когда-нибудь здесь что-то появиться...",
     },
 ]
 
 export const accessories = [
     {
         id: 0,
+        type:"Чемодан",
         imageUrl: "https://sneakerhead.ru/upload/resize_cache/webp/iblock/b6f/b6f12beee6da4dfec3065831b61c4cf1.webp",
         brand: "The North Face",
         name: "ROLLING THUNDER 80L",
         color: "Черный",
         price: 24250,
         rating: 1,
+        description:"Самый востребованный товар во время закрытых границ...",
+    },
+    {
+        id: 1,
+        type:"Фигурка",
+        imageUrl: "https://sneakerhead.ru/upload/resize_cache/iblock/6bd/582_874_1/6bdcc8369780ca2b4492660d6021e60a.JPG",
+        brand: "Funko",
+        name: "Grogu with cookies",
+        color: "Зеленный",
+        price: 1650,
+        rating: 10,
+        description:"Ооо... Он такой прикольный",
     },
 ]
 export const clothes = [
     {
         id: 0,
+        type:"кофта",
         imageUrl: "https://sneakerhead.ru/upload/iblock/8a4/8a432d74b843bdf0cf71be58e69a4633.jpg",
         brand: "Jordan",
         name: "x OFF WHITE Hoodie ",
@@ -77,10 +101,12 @@ export const clothes = [
         sizes: ["XS", "S"],
         price: 27990,
         rating: 1,
-        gender: "Мужская"
+        gender: "Мужская",
+        description:"А чего так дорого?",
     },
     {
         id: 1,
+        type:"куртка",
         imageUrl: "https://sneakerhead.ru/upload/resize_cache/webp/iblock/c47/c47de1bdc9b19725f3b2d187bfe8067c.webp",
         brand: "Jordan",
         name: " Flight Puffer Jacket",
@@ -88,10 +114,12 @@ export const clothes = [
         sizes: ["XS", "S", "L"],
         price: 15790,
         rating: 2,
-        gender: "Женская"
+        gender: "Женская",
+        description:"Когда-нибудь здесь что-то появиться...",
     },
     {
         id: 2,
+        type:"футболка",
         imageUrl: "https://sneakerhead.ru/upload/resize_cache/webp/iblock/00e/00e3e67ad6c80b5a57da7bab1a9c5b92.webp",
         brand: "Nike",
         name: "Solo Swoosh Camo T-Shirt ",
@@ -99,6 +127,7 @@ export const clothes = [
         sizes: ["L"],
         price: 3490,
         rating: 5,
-        gender: "Мужские"
+        gender: "Мужские",
+        description:"Когда-нибудь здесь что-то появиться...",
     },
 ]

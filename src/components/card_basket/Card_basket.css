@@ -1,0 +1,22 @@
+.card-basket {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-basket__number {
+  margin-right: 20px;
+}
+.card-basket__title {
+  margin: auto;
+}
+.card-basket__button {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background-color: orange;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Card_basket.css.map */

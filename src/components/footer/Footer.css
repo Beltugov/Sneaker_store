@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-around;
   padding: 16px 8%;
+  margin-top: 4%;
 }
 .footer__contacts-list__item {
   margin: 4px 0;

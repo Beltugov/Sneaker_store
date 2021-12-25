@@ -1,6 +1,6 @@
 import {createStore, combineReducers} from "redux";
 import authReducer from "./reducer/reducerLogin"
-// import basketReducer from "./reducer/Basket"
+import basketReducer from "./reducer/reducerBasket"
 import {persistStore, persistReducer} from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
@@ -11,7 +11,7 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
     authReducer,
-    // basketReducer,
+    basketReducer,
 })
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
